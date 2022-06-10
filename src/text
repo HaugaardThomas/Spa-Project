@@ -1,0 +1,30 @@
+  <Row>
+     <Col className="col-lg-5 col-md-3 offset-2 ">
+     <img className="img_nav_1 img-fluid" src={nav_1}/>
+     <img className="img_nav_1 img-fluid" src={nav_2}/>
+     <img className="img_nav_1 img-fluid" src={nav_3}/>
+     </Col>
+     <Col className="col-lg-4">
+       <img className="topLogo img-fluid" src={topLogo}/>
+     </Col>
+  </Row>
+
+
+     <Router>
+        
+        <Container fluid>
+     <Switch>
+        <Route path="/" component={HomeView}/>
+    
+
+     <Route path="/AboutDesk" component={AboutView}/>
+       
+
+     <Route path="/MaintainView" component={MaintainView}/>
+     
+
+     <Route path="/TouchView" component={TouchView}/>
+          
+      </Switch>  
+    </Container>
+    </Router>
